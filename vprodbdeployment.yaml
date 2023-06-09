@@ -18,7 +18,7 @@ spec:
         - name: vprodb
           image: simrankharpude21/vprofiledb:V1
           args:
-            - "ignore-db-dir=lost+foundx"
+            - "--ignore-db-dir=lost+foundx"
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: vpro-db-data
